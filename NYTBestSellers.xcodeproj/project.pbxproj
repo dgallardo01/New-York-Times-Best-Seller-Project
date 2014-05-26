@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3042988C193275D100295791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3042988B193275D100295791 /* Foundation.framework */; };
+		3042988E193275D100295791 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3042988D193275D100295791 /* CoreGraphics.framework */; };
+		30429890193275D100295791 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3042988F193275D100295791 /* UIKit.framework */; };
+		30429896193275D100295791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30429894193275D100295791 /* InfoPlist.strings */; };
+		30429898193275D100295791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30429897193275D100295791 /* main.m */; };
+		3042989C193275D100295791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3042989B193275D100295791 /* AppDelegate.m */; };
+		3042989F193275D100295791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3042989D193275D100295791 /* Main.storyboard */; };
+		304298A4193275D100295791 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304298A3193275D100295791 /* Images.xcassets */; };
+		304298AB193275D100295791 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304298AA193275D100295791 /* XCTest.framework */; };
+		304298AC193275D100295791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3042988B193275D100295791 /* Foundation.framework */; };
+		304298AD193275D100295791 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3042988F193275D100295791 /* UIKit.framework */; };
+		304298B5193275D100295791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 304298B3193275D100295791 /* InfoPlist.strings */; };
+		304298B7193275D100295791 /* NYTBestSellersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298B6193275D100295791 /* NYTBestSellersTests.m */; };
+		304298C21932C05E00295791 /* GenresCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298C11932C05E00295791 /* GenresCollectionViewController.m */; };
+		304298C51932C12E00295791 /* GenreCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298C41932C12E00295791 /* GenreCollectionViewCell.m */; };
+		304298C81932C4C200295791 /* NYTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298C71932C4C200295791 /* NYTAPIClient.m */; };
+		304298CB1932D67100295791 /* NYTBookGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298CA1932D67100295791 /* NYTBookGenre.m */; };
+		304298CE1932E9BE00295791 /* NYTGenreListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298CD1932E9BE00295791 /* NYTGenreListTableViewController.m */; };
+		304298D11932F3D700295791 /* NYTBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298D01932F3D700295791 /* NYTBook.m */; };
+		FDA63F71573E43F3B557D386 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2829287BF861401F86F440BE /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		304298AE193275D100295791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30429880193275D100295791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30429887193275D100295791;
+			remoteInfo = NYTBestSellers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2829287BF861401F86F440BE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30429888193275D100295791 /* NYTBestSellers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTBestSellers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3042988B193275D100295791 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3042988D193275D100295791 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3042988F193275D100295791 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		30429893193275D100295791 /* NYTBestSellers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NYTBestSellers-Info.plist"; sourceTree = "<group>"; };
+		30429895193275D100295791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30429897193275D100295791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30429899193275D100295791 /* NYTBestSellers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NYTBestSellers-Prefix.pch"; sourceTree = "<group>"; };
+		3042989A193275D100295791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3042989B193275D100295791 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3042989E193275D100295791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		304298A3193275D100295791 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		304298A9193275D100295791 /* NYTBestSellersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTBestSellersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		304298AA193275D100295791 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		304298B2193275D100295791 /* NYTBestSellersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NYTBestSellersTests-Info.plist"; sourceTree = "<group>"; };
+		304298B4193275D100295791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		304298B6193275D100295791 /* NYTBestSellersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYTBestSellersTests.m; sourceTree = "<group>"; };
+		304298C01932C05E00295791 /* GenresCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenresCollectionViewController.h; sourceTree = "<group>"; };
+		304298C11932C05E00295791 /* GenresCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenresCollectionViewController.m; sourceTree = "<group>"; };
+		304298C31932C12E00295791 /* GenreCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreCollectionViewCell.h; sourceTree = "<group>"; };
+		304298C41932C12E00295791 /* GenreCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreCollectionViewCell.m; sourceTree = "<group>"; };
+		304298C61932C4C200295791 /* NYTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTAPIClient.h; sourceTree = "<group>"; };
+		304298C71932C4C200295791 /* NYTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTAPIClient.m; sourceTree = "<group>"; };
+		304298C91932D67100295791 /* NYTBookGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTBookGenre.h; sourceTree = "<group>"; };
+		304298CA1932D67100295791 /* NYTBookGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTBookGenre.m; sourceTree = "<group>"; };
+		304298CC1932E9BE00295791 /* NYTGenreListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTGenreListTableViewController.h; sourceTree = "<group>"; };
+		304298CD1932E9BE00295791 /* NYTGenreListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTGenreListTableViewController.m; sourceTree = "<group>"; };
+		304298CF1932F3D700295791 /* NYTBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTBook.h; sourceTree = "<group>"; };
+		304298D01932F3D700295791 /* NYTBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTBook.m; sourceTree = "<group>"; };
+		69002D6F0B1E4378B894DAF9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30429885193275D100295791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3042988E193275D100295791 /* CoreGraphics.framework in Frameworks */,
+				30429890193275D100295791 /* UIKit.framework in Frameworks */,
+				3042988C193275D100295791 /* Foundation.framework in Frameworks */,
+				FDA63F71573E43F3B557D386 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304298A6193275D100295791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304298AB193275D100295791 /* XCTest.framework in Frameworks */,
+				304298AD193275D100295791 /* UIKit.framework in Frameworks */,
+				304298AC193275D100295791 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3042987F193275D100295791 = {
+			isa = PBXGroup;
+			children = (
+				30429891193275D100295791 /* NYTBestSellers */,
+				304298B0193275D100295791 /* NYTBestSellersTests */,
+				3042988A193275D100295791 /* Frameworks */,
+				30429889193275D100295791 /* Products */,
+				69002D6F0B1E4378B894DAF9 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		30429889193275D100295791 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30429888193275D100295791 /* NYTBestSellers.app */,
+				304298A9193275D100295791 /* NYTBestSellersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3042988A193275D100295791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3042988B193275D100295791 /* Foundation.framework */,
+				3042988D193275D100295791 /* CoreGraphics.framework */,
+				3042988F193275D100295791 /* UIKit.framework */,
+				304298AA193275D100295791 /* XCTest.framework */,
+				2829287BF861401F86F440BE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30429891193275D100295791 /* NYTBestSellers */ = {
+			isa = PBXGroup;
+			children = (
+				3042989A193275D100295791 /* AppDelegate.h */,
+				3042989B193275D100295791 /* AppDelegate.m */,
+				3042989D193275D100295791 /* Main.storyboard */,
+				304298C31932C12E00295791 /* GenreCollectionViewCell.h */,
+				304298C41932C12E00295791 /* GenreCollectionViewCell.m */,
+				304298C01932C05E00295791 /* GenresCollectionViewController.h */,
+				304298C11932C05E00295791 /* GenresCollectionViewController.m */,
+				304298CC1932E9BE00295791 /* NYTGenreListTableViewController.h */,
+				304298CD1932E9BE00295791 /* NYTGenreListTableViewController.m */,
+				304298C61932C4C200295791 /* NYTAPIClient.h */,
+				304298C71932C4C200295791 /* NYTAPIClient.m */,
+				304298CF1932F3D700295791 /* NYTBook.h */,
+				304298D01932F3D700295791 /* NYTBook.m */,
+				304298C91932D67100295791 /* NYTBookGenre.h */,
+				304298CA1932D67100295791 /* NYTBookGenre.m */,
+				304298A3193275D100295791 /* Images.xcassets */,
+				30429892193275D100295791 /* Supporting Files */,
+			);
+			path = NYTBestSellers;
+			sourceTree = "<group>";
+		};
+		30429892193275D100295791 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30429893193275D100295791 /* NYTBestSellers-Info.plist */,
+				30429894193275D100295791 /* InfoPlist.strings */,
+				30429897193275D100295791 /* main.m */,
+				30429899193275D100295791 /* NYTBestSellers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		304298B0193275D100295791 /* NYTBestSellersTests */ = {
+			isa = PBXGroup;
+			children = (
+				304298B6193275D100295791 /* NYTBestSellersTests.m */,
+				304298B1193275D100295791 /* Supporting Files */,
+			);
+			path = NYTBestSellersTests;
+			sourceTree = "<group>";
+		};
+		304298B1193275D100295791 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				304298B2193275D100295791 /* NYTBestSellersTests-Info.plist */,
+				304298B3193275D100295791 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30429887193275D100295791 /* NYTBestSellers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304298BA193275D100295791 /* Build configuration list for PBXNativeTarget "NYTBestSellers" */;
+			buildPhases = (
+				876FBD3E824044FDA2A641D8 /* Check Pods Manifest.lock */,
+				30429884193275D100295791 /* Sources */,
+				30429885193275D100295791 /* Frameworks */,
+				30429886193275D100295791 /* Resources */,
+				591CB5E2463E440BA249CE25 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYTBestSellers;
+			productName = NYTBestSellers;
+			productReference = 30429888193275D100295791 /* NYTBestSellers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		304298A8193275D100295791 /* NYTBestSellersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 304298BD193275D100295791 /* Build configuration list for PBXNativeTarget "NYTBestSellersTests" */;
+			buildPhases = (
+				304298A5193275D100295791 /* Sources */,
+				304298A6193275D100295791 /* Frameworks */,
+				304298A7193275D100295791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				304298AF193275D100295791 /* PBXTargetDependency */,
+			);
+			name = NYTBestSellersTests;
+			productName = NYTBestSellersTests;
+			productReference = 304298A9193275D100295791 /* NYTBestSellersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30429880193275D100295791 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Danny;
+				TargetAttributes = {
+					304298A8193275D100295791 = {
+						TestTargetID = 30429887193275D100295791;
+					};
+				};
+			};
+			buildConfigurationList = 30429883193275D100295791 /* Build configuration list for PBXProject "NYTBestSellers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3042987F193275D100295791;
+			productRefGroup = 30429889193275D100295791 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30429887193275D100295791 /* NYTBestSellers */,
+				304298A8193275D100295791 /* NYTBestSellersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30429886193275D100295791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304298A4193275D100295791 /* Images.xcassets in Resources */,
+				30429896193275D100295791 /* InfoPlist.strings in Resources */,
+				3042989F193275D100295791 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304298A7193275D100295791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304298B5193275D100295791 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		591CB5E2463E440BA249CE25 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		876FBD3E824044FDA2A641D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30429884193275D100295791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304298C51932C12E00295791 /* GenreCollectionViewCell.m in Sources */,
+				304298C21932C05E00295791 /* GenresCollectionViewController.m in Sources */,
+				304298D11932F3D700295791 /* NYTBook.m in Sources */,
+				3042989C193275D100295791 /* AppDelegate.m in Sources */,
+				30429898193275D100295791 /* main.m in Sources */,
+				304298CE1932E9BE00295791 /* NYTGenreListTableViewController.m in Sources */,
+				304298C81932C4C200295791 /* NYTAPIClient.m in Sources */,
+				304298CB1932D67100295791 /* NYTBookGenre.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304298A5193275D100295791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304298B7193275D100295791 /* NYTBestSellersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		304298AF193275D100295791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30429887193275D100295791 /* NYTBestSellers */;
+			targetProxy = 304298AE193275D100295791 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30429894193275D100295791 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30429895193275D100295791 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3042989D193275D100295791 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3042989E193275D100295791 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		304298B3193275D100295791 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304298B4193275D100295791 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		304298B8193275D100295791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		304298B9193275D100295791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		304298BB193275D100295791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69002D6F0B1E4378B894DAF9 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NYTBestSellers/NYTBestSellers-Prefix.pch";
+				INFOPLIST_FILE = "NYTBestSellers/NYTBestSellers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		304298BC193275D100295791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69002D6F0B1E4378B894DAF9 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NYTBestSellers/NYTBestSellers-Prefix.pch";
+				INFOPLIST_FILE = "NYTBestSellers/NYTBestSellers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		304298BE193275D100295791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NYTBestSellers.app/NYTBestSellers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NYTBestSellers/NYTBestSellers-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NYTBestSellersTests/NYTBestSellersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		304298BF193275D100295791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NYTBestSellers.app/NYTBestSellers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NYTBestSellers/NYTBestSellers-Prefix.pch";
+				INFOPLIST_FILE = "NYTBestSellersTests/NYTBestSellersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30429883193275D100295791 /* Build configuration list for PBXProject "NYTBestSellers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304298B8193275D100295791 /* Debug */,
+				304298B9193275D100295791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304298BA193275D100295791 /* Build configuration list for PBXNativeTarget "NYTBestSellers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304298BB193275D100295791 /* Debug */,
+				304298BC193275D100295791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		304298BD193275D100295791 /* Build configuration list for PBXNativeTarget "NYTBestSellersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304298BE193275D100295791 /* Debug */,
+				304298BF193275D100295791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30429880193275D100295791 /* Project object */;
+}

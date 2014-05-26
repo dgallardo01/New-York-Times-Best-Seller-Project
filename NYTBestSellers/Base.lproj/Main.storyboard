@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VLv-j6-oQT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Genres Collection View Controller - Bestseller Genres-->
+        <scene sceneID="8CP-qb-bLW">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="reh-vl-nWS" customClass="GenresCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Oam-yg-DGx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JRa-Kq-W7B">
+                            <size key="itemSize" width="142" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="genreCell" id="9rU-h2-6ho" customClass="GenreCollectionViewCell">
+                                <rect key="frame" x="0.0" y="64" width="142" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="142" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-jj-qED">
+                                            <rect key="frame" x="0.0" y="0.0" width="142" height="120"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dqi-jj-qED" secondAttribute="trailing" id="Rm6-RO-pCe"/>
+                                    <constraint firstItem="dqi-jj-qED" firstAttribute="leading" secondItem="9rU-h2-6ho" secondAttribute="leading" id="Zo0-h8-83W"/>
+                                    <constraint firstItem="dqi-jj-qED" firstAttribute="top" secondItem="9rU-h2-6ho" secondAttribute="top" id="b5Z-hh-A1v"/>
+                                    <constraint firstAttribute="bottom" secondItem="dqi-jj-qED" secondAttribute="bottom" id="jgg-N3-JIj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="genreTagLabel" destination="dqi-jj-qED" id="OI5-PV-NwU"/>
+                                    <segue destination="vMe-vg-dow" kind="push" identifier="genreCellToList" id="dl3-yO-NOn"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="reh-vl-nWS" id="cK3-Jd-695"/>
+                            <outlet property="delegate" destination="reh-vl-nWS" id="LY5-qC-9wF"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Bestseller Genres" id="hNI-xK-o0c"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0g-Yc-hdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-21"/>
+        </scene>
+        <!--Genre List Table View Controller-->
+        <scene sceneID="BgT-2K-uld">
+            <objects>
+                <tableViewController id="vMe-vg-dow" customClass="NYTGenreListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="22" sectionFooterHeight="22" id="ykc-ne-pcm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="genreListCell" textLabel="B8r-D2-dCh" rowHeight="84" style="IBUITableViewCellStyleDefault" id="kBC-vf-OVf">
+                                <rect key="frame" x="0.0" y="86" width="320" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kBC-vf-OVf" id="n3W-Gu-LkR">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B8r-D2-dCh">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="83"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vMe-vg-dow" id="XI0-Tl-mbF"/>
+                            <outlet property="delegate" destination="vMe-vg-dow" id="7gN-Qd-iQh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="CHc-B4-28V"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyZ-A9-8Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="-21"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vcs-Tb-NA2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VLv-j6-oQT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i5U-Rk-pvT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="reh-vl-nWS" kind="relationship" relationship="rootViewController" id="YEG-CR-kdt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksH-qY-5sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="-21"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
