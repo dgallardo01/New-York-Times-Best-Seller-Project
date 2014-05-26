@@ -9,6 +9,8 @@
 #import "NYTGenreListTableViewController.h"
 #import "NYTBook.h"
 #import "NYTAPIClient.h"
+#import "NYTBookTableViewCell.h"
+#import "NYTBookDetailViewController.h"
 
 @interface NYTGenreListTableViewController ()
 
@@ -37,6 +39,8 @@
             NSLog(@"%@",self.genreList);
             [self.tableView reloadData];
     }];
+    
+    self.navigationItem.title = self.genreKey;
     
 
     // Uncomment the following line to preserve selection between presentations.
@@ -69,15 +73,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"genreListCell" forIndexPath:indexPath];
+    NYTBookTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"genreListCell" forIndexPath:indexPath];
     
     NYTBook *book = [self.genreList objectAtIndex:[indexPath row]];
-    cell.textLabel.text = book.title;
-//    cell.textLabel.text = @"placeholder";
 
+    cell.bookTitleLabel.text = book.title;
+    cell.bookAuthorLabel.text = book.author;
+    cell.bookDescriptionLabel.text = book.description;
+    cell.bookRankLabel.text = [NSString stringWithFormat:@"%@", book.rank];
     return cell;
     [self.tableView reloadData];
 
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NYTBookDetailViewController *bookDetailVC = segue.destinationViewController;
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NYTBook *tableViewBook = [self.genreList objectAtIndex:indexPath.row];
+    bookDetailVC.book = tableViewBook;
 }
 
 

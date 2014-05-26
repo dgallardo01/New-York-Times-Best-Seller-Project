@@ -26,6 +26,8 @@
 		304298CB1932D67100295791 /* NYTBookGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298CA1932D67100295791 /* NYTBookGenre.m */; };
 		304298CE1932E9BE00295791 /* NYTGenreListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298CD1932E9BE00295791 /* NYTGenreListTableViewController.m */; };
 		304298D11932F3D700295791 /* NYTBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298D01932F3D700295791 /* NYTBook.m */; };
+		304298D41933160E00295791 /* NYTBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298D31933160E00295791 /* NYTBookTableViewCell.m */; };
+		304298D71933196600295791 /* NYTBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304298D61933196600295791 /* NYTBookDetailViewController.m */; };
 		FDA63F71573E43F3B557D386 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2829287BF861401F86F440BE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,10 @@
 		304298CD1932E9BE00295791 /* NYTGenreListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTGenreListTableViewController.m; sourceTree = "<group>"; };
 		304298CF1932F3D700295791 /* NYTBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTBook.h; sourceTree = "<group>"; };
 		304298D01932F3D700295791 /* NYTBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTBook.m; sourceTree = "<group>"; };
+		304298D21933160E00295791 /* NYTBookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTBookTableViewCell.h; sourceTree = "<group>"; };
+		304298D31933160E00295791 /* NYTBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTBookTableViewCell.m; sourceTree = "<group>"; };
+		304298D51933196600295791 /* NYTBookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTBookDetailViewController.h; sourceTree = "<group>"; };
+		304298D61933196600295791 /* NYTBookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTBookDetailViewController.m; sourceTree = "<group>"; };
 		69002D6F0B1E4378B894DAF9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,12 +148,16 @@
 				304298C11932C05E00295791 /* GenresCollectionViewController.m */,
 				304298CC1932E9BE00295791 /* NYTGenreListTableViewController.h */,
 				304298CD1932E9BE00295791 /* NYTGenreListTableViewController.m */,
+				304298D51933196600295791 /* NYTBookDetailViewController.h */,
+				304298D61933196600295791 /* NYTBookDetailViewController.m */,
 				304298C61932C4C200295791 /* NYTAPIClient.h */,
 				304298C71932C4C200295791 /* NYTAPIClient.m */,
 				304298CF1932F3D700295791 /* NYTBook.h */,
 				304298D01932F3D700295791 /* NYTBook.m */,
 				304298C91932D67100295791 /* NYTBookGenre.h */,
 				304298CA1932D67100295791 /* NYTBookGenre.m */,
+				304298D21933160E00295791 /* NYTBookTableViewCell.h */,
+				304298D31933160E00295791 /* NYTBookTableViewCell.m */,
 				304298A3193275D100295791 /* Images.xcassets */,
 				30429892193275D100295791 /* Supporting Files */,
 			);
@@ -317,7 +327,9 @@
 			files = (
 				304298C51932C12E00295791 /* GenreCollectionViewCell.m in Sources */,
 				304298C21932C05E00295791 /* GenresCollectionViewController.m in Sources */,
+				304298D41933160E00295791 /* NYTBookTableViewCell.m in Sources */,
 				304298D11932F3D700295791 /* NYTBook.m in Sources */,
+				304298D71933196600295791 /* NYTBookDetailViewController.m in Sources */,
 				3042989C193275D100295791 /* AppDelegate.m in Sources */,
 				30429898193275D100295791 /* main.m in Sources */,
 				304298CE1932E9BE00295791 /* NYTGenreListTableViewController.m in Sources */,
