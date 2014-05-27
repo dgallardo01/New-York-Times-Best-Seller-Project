@@ -48,7 +48,7 @@
 - (void) getGenreList:(NSString*)genreList WithCompletion:(void(^)(NSArray * books))completionBlock{
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSURL *nytBestSellerURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.nytimes.com/svc/books/v2/lists.json?list=%@&api-key=651e50b5ac2b529a5a5a0df1ae73bae8:7:69324718", genreList]];
+    NSURL *nytBestSellerURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.nytimes.com/svc/books/v2/lists.json?list=%@&api-key=%@", genreList, [self.apiKey getAPIKey]]];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLRequest *request = [NSURLRequest requestWithURL:nytBestSellerURL];
     NSURLSessionDataTask *nytDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
