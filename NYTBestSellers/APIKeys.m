@@ -10,4 +10,8 @@
 
 @implementation APIKeys
 
+- (NSString *)getAPIKey{
+    return @"651e50b5ac2b529a5a5a0df1ae73bae8:7:69324718";
+}
+
 @end

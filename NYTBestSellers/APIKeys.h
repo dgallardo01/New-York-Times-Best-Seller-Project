@@ -10,4 +10,6 @@
 
 @interface APIKeys : NSObject
 
+- (NSString *)getAPIKey;
+
 @end
