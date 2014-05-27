@@ -9,6 +9,13 @@
 #import "NYTAPIClient.h"
 #import "NYTBookGenre.h"
 #import "NYTBook.h"
+#import "APIKeys.h"
+
+@interface NYTAPIClient ()
+
+@property (nonatomic, strong) APIKeys *apiKey;
+
+@end
 
 @implementation NYTAPIClient
 
@@ -17,6 +24,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.apiKey = [[APIKeys alloc]init];
     }
     return self;
 }
@@ -24,7 +32,7 @@
 - (void) getGenresWithCompletion:(void(^)(NSArray * genres))completionBlock{
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSURL *nytBestSellerURL = [NSURL URLWithString:@"http://api.nytimes.com/svc/books/v2/lists/names.json?api-key=651e50b5ac2b529a5a5a0df1ae73bae8:7:69324718"];
+    NSURL *nytBestSellerURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.nytimes.com/svc/books/v2/lists/names.json?api-key=%@",[self.apiKey getAPIKey]]];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLRequest *request = [NSURLRequest requestWithURL:nytBestSellerURL];
     NSURLSessionDataTask *nytDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
